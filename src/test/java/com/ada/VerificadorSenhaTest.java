@@ -40,4 +40,14 @@ class VerificadorSenhaTest {
 
         Assertions.assertFalse(valida);
     }
+
+    @Test
+    public void quandoSenhaVazia_entaoInvalidaaaa(){
+        VerificadorSenha verificador = new VerificadorSenha();
+        String senha = "";
+        boolean valida = verificador.isValida(senha);
+
+        Assertions.assertFalse(valida);
+    }
+
 }
